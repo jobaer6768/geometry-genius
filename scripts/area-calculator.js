@@ -25,10 +25,19 @@ function area(a, b){
 function calculateTriangleArea(){
     const triangleBase = getInputFieldById('triangle-base');
     const triangleHeight = getInputFieldById('triangle-height');
-
     const triangleArea = 0.5 * area(triangleBase, triangleHeight);
-    setElement('triangle-area', triangleArea);
 
-    return triangleArea;
+    setElement('triangle-area', triangleArea);
 }
 
+function calculateRectangleArea(){
+    const width = getInputFieldById('rectangle-width');
+    const length = getInputFieldById('rectangle-length');
+    const rectangleArea = area(width, length);
+
+    setElement('rectangle-area', rectangleArea);
+}
+
+function calculateParallelogramArea(){
+    
+}
