@@ -39,5 +39,9 @@ function calculateRectangleArea(){
 }
 
 function calculateParallelogramArea(){
-    
+    const base = getInputFieldById('parallelogram-base');
+    const height = getInputFieldById('parallelogram-height');
+    const parallelogramArea = area(base, height);
+
+    setElement('parallelogram-area', parallelogramArea);
 }
